@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PokeApplication<poke>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.immaginedev.poke.PokeApplication",
+            "projectName": "poke",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

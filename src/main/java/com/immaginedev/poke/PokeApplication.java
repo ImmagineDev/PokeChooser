@@ -9,5 +9,5 @@ public class PokeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PokeApplication.class, args);
 	}
-
+	
 }
