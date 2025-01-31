@@ -15,11 +15,13 @@ public class SecurityConfig {
         http
                 // Deshabilitar CSRF solo si no es necesario (por ejemplo, para APIs públicas)
                 .csrf(AbstractHttpConfigurer::disable)
+
                 // Configurar las autorizaciones de las solicitudes
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/pokemon/**").permitAll() // Permitir acceso público
                         .anyRequest().authenticated() // Requerir autenticación para otros endpoints
                 )
+
                 // Opcional: puedes configurar la autenticación si la necesitas
                 .formLogin(AbstractHttpConfigurer::disable) // Deshabilitar el formulario de login
                 .httpBasic(AbstractHttpConfigurer::disable); // Deshabilitar autenticación básica

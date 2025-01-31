@@ -3,6 +3,7 @@ package com.immaginedev.poke.API.DTOs;
 import java.time.LocalDateTime;
 
 public class ErrorResponse {
+    
     private String message;
     private String errorType;
     private int statusCode;
@@ -17,7 +18,7 @@ public class ErrorResponse {
         this.path = path;
     }
 
-    // Getters y setters
+    // Getters & Setters
     public String getMessage() {
         return message;
     }
@@ -57,5 +58,5 @@ public class ErrorResponse {
     public void setPath(String path) {
         this.path = path;
     }
-
+    
 }
