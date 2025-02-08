@@ -1,0 +1,75 @@
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.pokemon-in-team {
+  color: black;
+  background: linear-gradient(#5d838cc8, #5fb47bcb);
+  width: 170px;
+
+  border: 8px solid rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: aquamarine;
+  background-color: aquamarine;
+}
+
+.middle-part {
+}
+
+.right-part {
+}
+
+.container {
+  background-image: url("./assets/Forest.png");
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 250px auto 250px; /*repeat(3, 1fr);*/
+  width: 100vw;
+  height: 100vh;
+}
